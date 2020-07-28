@@ -252,8 +252,9 @@ legend,
 /*공통레이아웃*/
 
 .container {
-  display: flex;
-  flex-flow: row wrap;
+  /* display: flex;
+  flex-flow: row wrap; */
+  display: grid;
 }
 
 
@@ -264,15 +265,17 @@ legend,
 
 
 .appHeader {
-  background-color: rgb(107, 101, 101);
-
+  background-color: rgb(185, 174, 174);
+  display: grid;
 
 }
 
 
 .memberOnly {
-  background-color: brown;
-
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
 
 }
 
