@@ -254,7 +254,8 @@ legend,
 .container {
   /* display: flex;
   flex-flow: row wrap; */
-  display: grid;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 
@@ -291,11 +292,6 @@ input[type="search"]{
   height: 35px;  
 }
 
-/*모바일 내비게이션*/
-
-.appNavigation {
-  background-color: purple;
-}
 
 /* 모바일 메인 콘텐츠 */
 .appMain {
