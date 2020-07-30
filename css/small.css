@@ -237,15 +237,42 @@ input[type="search"]{
   background-color: lime;
   display: flex;
   flex-flow: row wrap;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 .book,.news,.board,.favoite,.twitter{
   width: 100%;
-  height: 10vh;
+ 
+  margin-top: 10px;
+  margin-bottom: 10px;
+
 }
 
-
+.book__cover {
+  
+}
+.responsive{
+  /* min-width: 100%; */
+ 
+  /* padding: 10% 10% 0 10%; */
+}
+/* 
+.book__info{
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.book__info dd{
+  margin-left: 0;
+  margin-left: 10px;
+} */
+/* .themeGreen {
+  width: 100%;
+  margin-left: 0;
+  padding-right: 10px;
+  font-size: 1.8rem;
+} */
 /* 모바일 푸터 */
 
 .appFooter {
