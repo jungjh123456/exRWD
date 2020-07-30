@@ -163,13 +163,73 @@ input[type="search"]{
 } */
 
 .menu__list {
-  background-color: purple;
+
   position: fixed;
   top: 0;
   left: 0;
   width: 70vw;
-  height: 100vh;
+  height: 100vh;  
+  color: #fff;
+  background-color: rgba(0,0,0,.5);
   transform: translateX(-100%);
+  /* filter: blur(7px); */
+  /* filter: brightness(10%); */
+  backdrop-filter: blur(3px);
+  /* -webkit-backdrop-filter: blur(3px); */
+  padding: 20px;
+  
+}
+/* .menu__item{
+  display: flex;
+  flex-flow: row wrap;
+} */
+
+.men__item::before {
+  
+  
+}
+.menu__link {
+  font-size: 1.7rem;
+  font-weight: 700;
+  display: inline-block;
+  width: calc(100% - 1.5em);
+  
+  margin-bottom: 20px; /*마진 겹침 있어서 2배 더 주거나 패딩을 준다.*/
+  
+}
+.menu__subMenu {
+  font-size: 1.6rem;
+  display: none;
+  width: 100%;
+}
+.menu__subMenu li{
+  margin: 10px 0;
+}
+.menu__subMenu a{
+  display: block;
+  padding: 5px 0;
+}
+.menuAct .menu__subMenu{
+  display: block;
+}
+.isAct .menu__list {
+  transform:  none;
+}
+.menu__list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  
+  background-color: inherit;
+  
+ 
+  filter: url(.menu__list);
 }
 
 /* 모바일 메인 콘텐츠 */
