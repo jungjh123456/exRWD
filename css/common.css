@@ -561,6 +561,91 @@ video.responsive{
   top: 0;
   left:0;
 }
+/*공통 게시판*/
+.board {
+
+  position: relative;
+  overflow: hidden;
+}
+.board__list {
+  width: 100%;
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.board__list li {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 10px 0;
+}
+
+.board__list a {
+  /* width: calc(100% - 120px); */
+  flex-grow: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0 10px 0 5px;
+}
+
+.board__more {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 10px;
+}
+
+.board__list time {
+ 
+}
+
+/*공통 인기사이트*/
+.favorite__list {
+ 
+ 
+  margin: 15px 0;
+  padding-left: 20px;
+}
+.favorite__list li {
+  counter-increment: number;
+  margin: 10px 0;
+  display: flex;
+  flex-flow: row nowrap;
+
+}
+.favorite__list a{
+  position: relative;
+  flex-grow: 1;
+  
+}
+
+.favorite__list li::before {
+  content: counter(number);
+  color: #fff;
+  padding: 2px 6px;
+  background-color: #eea60a;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.favorite__list a:hover::before,
+.favorite__list a:focus::before{
+  content: attr(data-tooltip);
+  position: absolute;
+  border: 1px solid #aaa;
+  padding: 5px;
+
+  top: 1em;
+  right: -10px;
+  font-weight: 700;
+  border-radius: 5px;
+  z-index: 100;
+  color: #fff;
+  box-shadow: 2px 2px 0 0 #000;
+  background-color: #eea60a;
+}
+
+
 /* 모바일 푸터 */
 
 

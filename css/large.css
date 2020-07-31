@@ -12,7 +12,9 @@ body {
 }
 
 .appHeader, .appMain,.menu__list{
- width: 1000px;
+  width: 78.125%;
+  min-width: 1000px;
+  max-width: 1800px;
  
 }
 .appNavigation {
@@ -163,6 +165,16 @@ body {
   
   
 }
+
+.favorite__list a:hover::before,
+.favorite__list a:focus::before{
+ 
+
+  top: 1em;
+  right: -10px;
+ 
+}
+
 .twitter {
   grid-area: 2/5/3/span 5;
  
