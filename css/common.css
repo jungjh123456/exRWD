@@ -458,7 +458,28 @@ input[type="search"]{
 }
 
 
+/*공통 새소식*/
+video.responsive{
+  width: 100%;
+}
 
+.news {
+  /* background-color: pink; */
+}
+
+.news__videoContainer {
+  margin: 15px 20px;
+}
+
+.news__video {
+
+}
+
+.news__date {
+  display: block;
+  text-align: right;
+  margin: 1em 0;  /*p유저 에이전트 스타일에 기본이 설정되어 있다. 그래도 모바일과 동일하게 1em을 준다.*/
+}
 
 /* .appMain h2 {
   display: flex;
@@ -508,7 +529,40 @@ input[type="search"]{
   background-position: 0 -460px;
 } */
 
+
+/* 공통 새소식 - iframe */
+
+
+
+.iframeContainer{
+  position: relative;
+  width: 100%;
+  height: 0 !important;
+ 
+  
+}
+
+.iframe16to9 {
+  padding-top: 56.25%;
+}
+
+.iframe4to3 {
+  padding-top: 75%;
+}
+.iframe21to9 {
+  padding-top: 42.857142857142855%''
+}
+
+
+.iframe {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left:0;
+}
 /* 모바일 푸터 */
+
 
 .appFooter {
   background-color: orange;
