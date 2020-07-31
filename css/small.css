@@ -234,7 +234,7 @@ input[type="search"]{
 
 /* 모바일 메인 콘텐츠 */
 .appMain {
-  background-color: lime;
+
   display: flex;
   flex-flow: row wrap;
   padding: 10px 20px;
@@ -283,8 +283,18 @@ input[type="search"]{
 
 }
 
+
+/*공통 트위터*/
+.twitter__userProfile {
+  text-align: right;
+}
 /* 모바일 푸터 */
 
 .appFooter {
-  background-color: orange;
+  line-height: 2;
+}
+
+.address span{
+  display: block;
+  
 }

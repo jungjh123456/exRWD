@@ -131,7 +131,7 @@ body {
 
 .appMain {
   display: grid;
-  width: 1000px;
+  /* width: 1000px; */
   grid-template:  auto / repeat(12, 1fr);
   grid-gap: 20px;
   padding-top: 20px;
@@ -180,5 +180,11 @@ body {
  
 }
 
+
+/* 데스크탑 푸터 */
+
+.appFooter {
+  text-align: center;
+}
 
 
